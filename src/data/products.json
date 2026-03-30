@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Web Kit",
+    "description": "Essential tools for any web project.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "Starter",
+    "features": ["3 Projects", "Community Support", "Free Hosting"],
+    "icon": "🌐"
+  },
+  {
+    "id": 2,
+    "name": "Business Pro",
+    "description": "Powerful features for growing teams.",
+    "price": 85,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Best Seller",
+    "features": ["Unlimited Projects", "Priority Support", "Custom Domain", "Analytics"],
+    "icon": "💎"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Plus",
+    "description": "Full scale solutions for large agencies.",
+    "price": 250,
+    "period": "yearly",
+    "tag": "Expert",
+    "tagType": "Premium",
+    "features": ["All Pro Features", "Dedicated Manager", "SLA Guarantee", "Custom API"],
+    "icon": "🏢"
+  },
+  {
+    "id": 4,
+    "name": "Designer's Choice",
+    "description": "Special tools for UI/UX professionals.",
+    "price": 45,
+    "period": "monthly",
+    "tag": "Featured",
+    "tagType": "Hot",
+    "features": ["100+ Templates", "Figma Integration", "SVG Exports"],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "Dev Ops Master",
+    "description": "Automate your workflow easily.",
+    "price": 120,
+    "period": "yearly",
+    "tag": "High Performance",
+    "tagType": "New",
+    "features": ["CI/CD Pipeline", "Docker Support", "Cloud Sync"],
+    "icon": "🛠️"
+  },
+  {
+    "id": 6,
+    "name": "Cloud Storage",
+    "description": "Secure your data in the cloud.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Secure",
+    "tagType": "Basic",
+    "features": ["1TB Storage", "End-to-End Encryption", "File Sharing"],
+    "icon": "☁️"
+  }
+]
