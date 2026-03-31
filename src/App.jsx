@@ -66,11 +66,11 @@ function App() {
               <p className="text-gray-500 text-lg">Provide premium mockups, design assets, and templates quickly with easy use platforms.</p>
               <div className="flex gap-4">
                 <button className="btn bg-violet-600 hover:bg-violet-700 text-white border-none rounded-xl px-8 h-14">Purchase Products</button>
-                <button className="btn btn-outline border-violet-600 text-violet-600 hover:bg-violet-600 hover:text-white rounded-xl px-8 h-14">Watch Demo</button>
+                <button className="btn btn-outline border-violet-600 text-violet-600 hover:bg-violet-600 hover:text-white rounded-xl px-8 h-14"><i className="fa-solid fa-arrow-right"></i>Watch Demo</button>
               </div>
             </div>
             <div className="md:w-1/2">
-              <img src="https://i.ibb.co/30BfXFq/hero-image.png" alt="Banner" className="w-full rounded-3xl" />
+              <img src='./src/assets/banner.png' />
             </div>
           </section>
 
