@@ -40,19 +40,21 @@ function App() {
       <ToastContainer position="top-right" autoClose={1500} />
       
       {/* Navbar Section */}
-      <nav className="navbar bg-white px-6 md:px-10 border-b border-gray-100 sticky top-0 z-50">
-        <div className="flex-1">
-          <a className="text-3xl font-extrabold text-violet-600">Digi<span className='font-normal'>Tools</span></a>
+      <nav className="navbar bg-white px-6 md:px-10 border-b border-gray-100 sticky top-0 z-50 relative">
+        <div className="flex-1 mr-[400px] absolute">
+          <a className="text-3xl font-extrabold text-violet-600">Digi<span className='font-bold'>Tools</span></a>
         </div>
-        <div className="hidden md:flex flex-none gap-6 text-gray-700 font-medium items-center">
+        <div className="hidden md:flex flex-none gap-6 text-gray-700 font-medium items-center ml-[380px] absolute">
           <a className="hover:text-violet-600 cursor-pointer">Product</a>
           <a className="hover:text-violet-600 cursor-pointer">Feature</a>
           <a className="hover:text-violet-600 cursor-pointer">Pricing</a>
           <div className="indicator ml-4">
-            <span className="indicator-item badge bg-violet-600 text-white border-none text-xs">{cartItems.length}</span>
-            <button className="btn btn-ghost btn-circle">🛒</button>
+            <div className='absolute ml-[150px]'>
+            <span className="indicator-item badge  text-red-600 border-none text-xs ">{cartItems.length}</span>
+            <button className="btn btn-ghost btn-circle xs">🛒</button>
           </div>
-          <button className="btn bg-violet-600 hover:bg-violet-700 text-white border-none rounded-xl px-8 ml-4">Sign Up</button>
+          <button className="btn bg-violet-600 hover:bg-violet-700 text-white border-none rounded-xl px-8 ml-4 ml-[250px]">Get started</button>
+            </div>
         </div>
       </nav>
       
@@ -154,15 +156,228 @@ function App() {
         )}
       </main>
 
-      <footer className="footer footer-center p-12 bg-gray-900 text-white rounded-t-3xl">
-        <aside className="max-w-xl">
-          <a className="text-4xl font-extrabold">Digi<span className="font-normal opacity-70">Tools</span></a>
-          <p className="mt-4 opacity-70 italic text-sm">Empowering your digital creative journey with premium tools.</p>
-        </aside>
-        <div className="border-t border-white/10 w-full mt-6 pt-6">
-          <p className="text-sm opacity-50 text-center">Copyright © 2026 - All right reserved by DigiTools Industries</p>
+
+<section className="bg-slate-50 py-20 px-4">
+  <div className="max-w-7xl mx-auto">
+    
+    {/* Section Header */}
+    <div className="text-center mb-16 relative">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-950 mb-4 ">
+        Get Started In 3 Steps
+      </h2>
+      <p className="text-lg text-gray-600  text-center">
+        Start using premium digital tools in minutes, not hours.
+      </p>
+    </div>
+
+    {/* Steps Cards Grid */}
+    <div className="grid md:grid-cols-3 gap-8">
+      
+      {/* Step 1 Card */}
+      <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm relative text-center">
+        {/* Step Number Tag */}
+        <div className="absolute top-6 right-6 bg-violet-600 text-white font-bold text-xs w-8 h-8 flex items-center justify-center rounded-lg shadow-sm">
+          01
         </div>
-      </footer>
+        
+<div className="w-24 h-24 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-8 border border-violet-200">
+  <img 
+    src="./src/assets/user.png" 
+    alt="User Icon" 
+    className="w-16 h-16 object-contain" 
+  />
+</div>
+        
+        <h3 className="text-2xl font-bold text-gray-950 mb-3">Create Account</h3>
+        
+        <p className="text-gray-600">
+          Sign up for free in seconds. No credit card required to get started.
+        </p>
+      </div>
+
+      <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm relative text-center">
+        <div className="absolute top-6 right-6 bg-violet-600 text-white font-bold text-xs w-8 h-8 flex items-center justify-center rounded-lg shadow-sm">
+          02
+        </div>
+        
+       <div className="w-24 h-24 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-8 border border-violet-200">
+  <img 
+    src="./src/assets/package.png" 
+    alt="User Icon" 
+    className="w-16 h-16 object-contain" 
+  />
+</div>
+      
+        <h3 className="text-2xl font-bold text-gray-950 mb-3">Choose Products</h3>
+        <p className="text-gray-600">
+          Browse our catalog and select the tools that fit your needs.
+        </p>
+      </div>
+
+      <div className="bg-white p-10 rounded-3xl border border-gray-100 shadow-sm relative text-center">
+        <div className="absolute top-6 right-6 bg-violet-600 text-white font-bold text-xs w-8 h-8 flex items-center justify-center rounded-lg shadow-sm">
+          03
+        </div>
+        
+        <div className="w-24 h-24 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-8 border border-violet-200">
+  <img 
+    src="./src/assets/rocket.png" 
+    alt="User Icon" 
+    className="w-16 h-16 object-contain" 
+  />
+</div>
+        
+        
+        <h3 className="text-2xl font-bold text-gray-950 mb-3">Start Creating</h3>
+        
+      
+        <p className="text-gray-600">
+          Download and start using your premium tools immediately.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section className="bg-gray-50 py-20 px-6">
+  <div className="max-w-7xl mx-auto">
+    
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-5">
+        Simple, Transparent Pricing
+      </h2>
+      <p className="text-gray-500 text-lg">
+        Choose the plan that fits your needs. Upgrade or downgrade anytime.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      
+      <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
+        <h3 className="text-2xl font-bold text-slate-800 mb-2">Starter</h3>
+        <div className="flex items-baseline mb-8">
+          <span className="text-4xl font-bold text-slate-900">$0</span>
+          <span className="text-gray-400 ml-1">/Month</span>
+        </div>
+        <ul className="space-y-4 mb-10 text-gray-600">
+          <li className="flex items-center gap-2"><i className="fa-solid fa-check text-green-500"></i> Basic access</li>
+          <li className="flex items-center gap-2"><i className="fa-solid fa-check text-green-500"></i> Community support</li>
+        </ul>
+        <button className="w-full py-4 rounded-2xl bg-violet-600 text-white font-bold">Get Started</button>
+      </div>
+
+      <div className="bg-violet-600 p-8 rounded-3xl shadow-xl relative md:scale-105 border-4 border-violet-500 text-white">
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-100 text-orange-600 py-1 px-4 rounded-full text-xs font-bold">Most Popular</div>
+        <h3 className="text-2xl font-bold mb-2">Pro</h3>
+        <div className="flex items-baseline mb-8 text-white">
+          <span className="text-4xl font-bold">$29</span>
+          <span className="ml-1">/Month</span>
+        </div>
+        <ul className="space-y-4 mb-10">
+          <li className="flex items-center gap-2"><i className="fa-solid fa-check"></i> Unlimited tools</li>
+          <li className="flex items-center gap-2"><i className="fa-solid fa-check"></i> Priority support</li>
+        </ul>
+        <button className="w-full py-4 rounded-2xl bg-white text-violet-600 font-bold">Start Trial</button>
+      </div>
+
+      <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
+        <h3 className="text-2xl font-bold text-slate-800 mb-2">Enterprise</h3>
+        <div className="flex items-baseline mb-8">
+          <span className="text-4xl font-bold text-slate-900">$99</span>
+          <span className="text-gray-400 ml-1">/Month</span>
+        </div>
+        <ul className="space-y-4 mb-10 text-gray-600">
+          <li className="flex items-center gap-2"><i className="fa-solid fa-check text-green-500"></i> Full Customization</li>
+          <li className="flex items-center gap-2"><i className="fa-solid fa-check text-green-500"></i> Dedicated Support</li>
+        </ul>
+        <button className="w-full py-4 rounded-2xl bg-violet-600 text-white font-bold">Contact Us</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+      {/* --- Footer Section Start --- */}
+<footer className="bg-[#0b1224] text-white py-16 px-6">
+  <div className="max-w-7xl mx-auto">
+    
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16">
+      
+      <div className="lg:col-span-2">
+        <h2 className="text-3xl font-bold mb-6">DigiTools</h2>
+        <p className="text-gray-400 max-w-xs leading-relaxed text-sm">
+          Premium digital tools for creators, professionals, and businesses. 
+          Work smarter with our suite of powerful tools.
+        </p>
+      </div>
+
+      <div>
+        <h4 className="font-semibold text-lg mb-6">Product</h4>
+        <ul className="space-y-4 text-gray-400 text-sm">
+          <li><a href="#" className="hover:text-white transition">Features</a></li>
+          <li><a href="#" className="hover:text-white transition">Pricing</a></li>
+          <li><a href="#" className="hover:text-white transition">Templates</a></li>
+          <li><a href="#" className="hover:text-white transition">Integrations</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 className="font-semibold text-lg mb-6">Company</h4>
+        <ul className="space-y-4 text-gray-400 text-sm">
+          <li><a href="#" className="hover:text-white transition">About</a></li>
+          <li><a href="#" className="hover:text-white transition">Blog</a></li>
+          <li><a href="#" className="hover:text-white transition">Careers</a></li>
+          <li><a href="#" className="hover:text-white transition">Press</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 className="font-semibold text-lg mb-6">Resources</h4>
+        <ul className="space-y-4 text-gray-400 text-sm mb-8">
+          <li><a href="#" className="hover:text-white transition">Documentation</a></li>
+          <li><a href="#" className="hover:text-white transition">Help Center</a></li>
+          <li><a href="#" className="hover:text-white transition">Community</a></li>
+          <li><a href="#" className="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="flex flex-col md:flex-row justify-end items-start md:items-center gap-4 mb-10">
+        <span className="font-bold text-sm">Social Links</span>
+        <div className="flex gap-3">
+            <a href="#" className="w-9 h-9 bg-white text-black rounded-full flex items-center justify-center hover:bg-gray-200 transition">
+                <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" className="w-9 h-9 bg-white text-black rounded-full flex items-center justify-center hover:bg-gray-200 transition">
+                <i className="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" className="w-9 h-9 bg-white text-black rounded-full flex items-center justify-center hover:bg-gray-200 transition">
+                <i className="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
+      <p className="text-gray-500 text-sm">
+        © 2026 Digitools. All rights reserved.
+      </p>
+      <div className="flex gap-8 text-gray-500 text-sm">
+        <a href="#" className="hover:text-white">Privacy Policy</a>
+        <a href="#" className="hover:text-white">Terms of Service</a>
+        <a href="#" className="hover:text-white">Cookies</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
     </div>
   );
 }
