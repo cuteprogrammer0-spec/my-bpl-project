@@ -90,7 +90,7 @@ function App() {
         {!showCart && (
           <>
             <h2 className="text-4xl font-bold text-gray-900">Premium Digital Tools</h2>
-            <p className="text-gray-500 max-w-xl mx-auto px-6">Explore our curated collection of professional tools.</p>
+            <p className="text-gray-500 ">Choose from our curated collection of premium digital products designedto boost your productivity and creativity.</p>
           </>
         )}
         <div className="flex justify-center gap-4 mt-8">
@@ -107,7 +107,7 @@ function App() {
               return (
                 <div key={p.id} className="card bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all rounded-3xl p-8">
                    <div className="flex justify-between items-start mb-6">
-                      <span className="text-5xl">{p.icon}</span>
+                      <img src={p.icon} alt={p.name} className="w-14 h-14 object-contain" />
                       <span className="badge bg-orange-100 text-orange-600 border-none font-bold text-xs p-3">{p.tagType}</span>
                    </div>
                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{p.name}</h3>
